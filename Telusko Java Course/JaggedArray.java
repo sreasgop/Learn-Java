@@ -1,4 +1,4 @@
-public class JaddedArray {
+public class JaggedArray {
     public static void main(String[] args){
         
         // Jagged array is a type of array in which all rows doesn't have equal number of columns. 
