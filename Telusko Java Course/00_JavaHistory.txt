@@ -1,0 +1,7 @@
+Java is an class based, general purpose object oriented programming language released in 1995 by a Sun Microsystems (which is now the subsidiary of Oracle) team lead by James Gosling. As a result James Gosling is also known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+JDK (Java Development Kit) consits of JRE(Java Runtime Environment) and Javac (Java Compiler). 
+
+JRE consists of Java Libraries and JVM (Java Virtual Machine)
+
+In order to execute a Java File (Source Code written in Java) first we need to compile it using javac (java compiler) which will create byte code (Object file created by javac) with .class extension which can be executed in the JVM. 
