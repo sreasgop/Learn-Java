@@ -10,6 +10,8 @@ public class EvenOdd {
         System.out.print("Enter number: ");
         int user_input = sc.nextInt();
 
+        sc.close();
+
         if(user_input%2==0){
             System.out.println(user_input+" is an even number.");
         } else {

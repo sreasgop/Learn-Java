@@ -10,6 +10,8 @@ public class Vote {
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
 
+        sc.close();
+        
         if(age>=18){
             System.out.println("You Can Vote!\n");
         } else {
