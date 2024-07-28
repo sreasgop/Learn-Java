@@ -42,7 +42,7 @@ class Mobile{
     }
 
     // Using instances variables within a static method
-    // In order to be able to use non-static variables within a static method we need to pass the object as a parameter.
+    // In order to be able to use non-static variables within a static method we need to have an object reference which we can achieve by passing the object as a parameter.
     public static void showlist(Mobile obj){
         System.out.println("\nbrand: "+obj.brand);
         System.out.println("name: "+obj.name);
