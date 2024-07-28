@@ -8,7 +8,7 @@ class Human{
     
     // Setter Methods
     public void setAge(int user_age){
-        this.age = user_age;
+        this.age = user_age;       // this keyword represents the current object: The object which is calling the method. 
     }
 
     public void setName(String user_name){
@@ -25,7 +25,7 @@ class Human{
     }
 }
 
-public class OOP_3_Encapsulation {
+public class OOP_4_Encapsulation {
 
     public static void main(String[] args) {
         
