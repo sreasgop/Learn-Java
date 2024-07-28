@@ -52,7 +52,7 @@ class Mobile{
 }
 
 
-public class OOP3 {
+public class OOP_3 {
     public static void main(String[] args) throws ClassNotFoundException {
         
         // Class.forName("Mobile");     // This will load this class in the class loader which will call the static block. 

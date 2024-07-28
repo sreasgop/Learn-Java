@@ -2,7 +2,7 @@ class Mobile{
     String brand;       // These variables are called instances variable. 
     int price; 
     String name;
-    
+
     static String category;    // Static variables are shared by different objects of the class.
     // This variable is static which means that this variable is common to all the instances of this class.
     // Static variable belongs to a class and not an object.
@@ -14,7 +14,7 @@ class Mobile{
     }
 }
 
-public class OOP2 {
+public class OOP_2 {
     public static void main(String[] args){
         
         Mobile.category = "SmartPhone";        // Setting the value of the static variable category once for one instance of the class mobile will make all the instances of this class have this value until it is changed again. 
