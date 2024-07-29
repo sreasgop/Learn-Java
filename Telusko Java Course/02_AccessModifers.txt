@@ -1,0 +1,4 @@
+public: This access modifers lets us use a variable or a method of a particular class both within and outside of a package.
+private: This access modifer lets us use a variable or a method within a class only. 
+default/private protected: This access modifier lets us use a variable or a method within the package. 
+protected: This access modifier lets us use a variable or a method within the same package and outside of the package if the class is a subclass. 
