@@ -42,7 +42,7 @@ class UpdatedWagonR extends WagonR{
 }
 
 
-public class OOP_9 {
+public class OOP_9_Abstraction {
     public static void main(String[] args) {
 
         // We cannot create an object of an Abstract class
