@@ -41,7 +41,7 @@ class Student{
 }
 
 
-public class OOP_14 {
+public class OOP_15 {
     public static void main(String[] args) {
         
         StudyResource material1 = new Book();
