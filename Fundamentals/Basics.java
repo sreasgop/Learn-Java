@@ -1,4 +1,3 @@
-// package Telusko;
 // Java is an general purpose object oriented programming language created in 1995 by a Sun Microsystems (which is now the subsidiary of Oracle) team lead by James Gosling. As a result James Gosling is also known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
 
 // JDK (Java Development Kit) consits of JRE(Java Runtime Environment) and Javac (Java Compiler). 
