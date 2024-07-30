@@ -1,6 +1,0 @@
-In java we follow the following naming conventions.
-
-For constants we use capital leters and for more than one words we may use '_ ' as separators: PIE, AREA, BRAND, MY_CONST, NEW_AREA, etc. 
-For variables we use cammel case (Starting with lower case letter): age, secondName, myMarks, etc. 
-For methods we use cammel case (Starting with lower case letter): add(), getName(), showResult(), etc. 
-For class we use cammel case (Starting with upper case letter): Human, Student, NewStudents, Cars, WildAnimals, etc. 
