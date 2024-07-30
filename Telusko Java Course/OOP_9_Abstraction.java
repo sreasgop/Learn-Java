@@ -1,3 +1,13 @@
+// Abstraction: Data abstraction is the process of hiding certain details and showing only essential information to the user.
+
+// The abstract keyword is a non-access modifier, used for classes and methods:
+
+// Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+
+// Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+// An abstract class can have both abstract and regular methods:
+
+
 // Abstract Class: An abstract class is a class that cannot be instantiated on its own and is intended to be subclassed. It may contain abstract methods, which are methods without an implementation, and/or concrete methods, which have an implementation.
 // In order to have an Abstract method we would definitely need an Abstract Class but it doesn't necessarily mean that an Abstract Class need to have Abstract methods only. An Abstract Class can also have concrete methods within. 
 // If a normal class inherits from an Abstract class it would need to implement all the abstract methods available in it's parent Abstract Class otherwise the compiler will throw an error and it won't be a concrete class. And if we totally need the sub class of the Abstract class to not implement all the abstract methods of the super Abstract class we would need to make the sub class as an Abstract class as well.
