@@ -1,10 +1,33 @@
 // Interface: An interface is a reference type, similar to an abstract class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructors. They are used to specify a set of methods that a class must implement, providing a way to achieve abstraction and multiple inheritance. In an interface dy default all the methods are of public abstract type. 
 
-// Class ---> Class             extends
+// Notes on Interface: 
+// Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
+// Interface methods do not have a body - the body is provided by the "implement" class
+// On implementation of an interface, you must override all of its methods
+// Interface methods are by default abstract and public
+// Interface attributes are by default public, static and final
+// An interface cannot contain a constructor (as it cannot be used to create objects)
+
+// Why And When To Use Interfaces?
+// 1) To achieve security - hide certain details and only show the important details of an object (interface).
+// 2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below class B which inherits from both A and Y interfaces).
+
+
+// Inheritance                // Keyword:
+// Class ---> Class             extends 
 // Interface ---> Interface     extends
 // Class ---> Interface         implements
 
+// An interface cannot inherit from a class, interfaces can only inhert from other interfaces. In other words a super interface has to be an interface only. Though an abstract class is a lot similar to an interface, an interface cannot inherti from an abstract class either. 
 
+// Also jsut like in class inhertitance the terminologies kind of stay the same:  
+// The interface from which other interface is inheriting is called the Super interface / Parent interface
+// The interface which is inheriting from an interface is called  the Sub interface / Child interface
+// As multiple inheritance is supported in interfaces an interface can have more than one parent interface. 
+
+abstract class NewClass{
+    public abstract void sound();
+}
 
 interface A{
 
@@ -80,7 +103,6 @@ public class OOP_13_Interface{
         obj.config();
         obj2.stop();
         obj2.run();
-
 
     }
 }
