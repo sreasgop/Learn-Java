@@ -1,4 +1,4 @@
-// A functional interface is an interface which only has one method.
+// A functional interface is an interface which only has one method and Lamda Expressions work only with Functional Interfaces. 
 
 interface SampleInterface{
     void show();
