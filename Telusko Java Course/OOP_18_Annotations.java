@@ -14,6 +14,11 @@ class B extends A{
 }
 
 
+// Built in method level annocations: 
+// @SafeWarags
+// @SuppressWarnings
+
+
 public class OOP_18_Annotations {
     public static void main(String[] args) {
 
