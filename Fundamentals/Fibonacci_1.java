@@ -6,7 +6,6 @@ public class Fibonacci_1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Term: ");
-
         int n = sc.nextInt();
 
         sc.close();
