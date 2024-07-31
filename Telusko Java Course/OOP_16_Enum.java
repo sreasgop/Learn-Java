@@ -12,7 +12,6 @@
 
 // enum is java extends the Enum class. 
 
-// 
 enum Status{
     RUNNING, FAILED, PENDING, SUCCESS;
 }
@@ -35,6 +34,28 @@ public class OOP_16_Enum {
             default:
                 System.out.println("Process Completed Successfully.");
                 break;
+        }
+
+        // By default enum in java extends an Enum class. 
+        System.out.println(s.getClass().getSuperclass());       // Here we can see that enum is a sub class of the Enum class. 
+
+
+        // System.out.println(s.ordinal());        // Just like an array the constants in an enum has an index value based on their position starting from 0. 
+        // We can retreive the index value using the .orginal() method of the enum class. 
+
+
+        // Array of enum: 
+        Status[] statusArray = Status.values();     // the .values() method returns an array of all enum constants. 
+
+        // Using enhanced for loop we can traverse through the constants of enum:
+        for(Status i: statusArray){
+            System.out.print(i.ordinal()+" : ");
+            System.out.println(i);
+        }
+
+        // This proves that .values() is a static method as we are being able to execute it here without an instances or object of the Status enum.
+        for(Status mystat: Status.values()){
+            System.out.println(mystat);
         }
 
     }
