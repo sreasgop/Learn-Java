@@ -3,7 +3,7 @@ enum Laptop{
 
     private int price; 
 
-    private Laptop(int price){
+    private Laptop(int price){      // We can have a constructor of enum as well. 
         this.price = price;
     }
 
