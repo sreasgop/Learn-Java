@@ -12,6 +12,14 @@ interface ParameterizedInterface{
 }
 
 
+// Another Functional Interface created to demonstrate how simple can Lamda Expressions make things. 
+@FunctionalInterface
+interface Calc{
+    int add(int firstNum, int secondNum);
+}
+
+
+
 public class OOP_20_LamdaExpression {
     public static void main(String[] args) {
         
@@ -28,7 +36,6 @@ public class OOP_20_LamdaExpression {
         // Lamda Expression: Lamda expression can only be used with Functional Interfaces. From Java 8 onwards we have support for Lamda Expression which makes the syntax a lot more easier and simple. Also when this program gets compiled we have less number of .class files to handle. We know that Anonymoys Inner Classes makes a .class file of their own with the name of the class they are defined in but in case of Lamda Expression we don't see that happening. For this example:
 
         // For the previous anonymous inner class the following .class files are added: OOP_20_LamdaExpressions$1.class
-
         // For the lamda Expression we simply get a OOP_20_LamdaExpression.class file which is slightly bigger in size
 
         // // Syntax of Lamda Expression:
@@ -44,8 +51,16 @@ public class OOP_20_LamdaExpression {
 
 
         // When passing parameters in Lamda Expressions we don't even need to mention the data types as in the declaring of the method in the interface the data type was mentioned as a result while creating the lamda expression we can ommit using the data types altogether. Also if we have only one parameter we can also skip using the parenthesis covering the parameter. 
-        ParameterizedInterface obj = (i, j) -> System.out.println("Addition: "+ (i+j));
-        obj.add(10, 20);
+        ParameterizedInterface obj2 = (i, j) -> System.out.println("Addition: "+ (i+j));
+        obj2.add(10, 20);
+
+
+        // A simpler lamda expression: 
+        Calc obj = (i, j) -> i+j;   // As this is a one liner method we cannot explicitly mention return keyword, doing such will throw an error
+        // This syntax will however get the same job done. 
+
+        int result = obj.add(100, 223);
+        System.out.println("Addition using a Lamda Expression of the Calc Reference type: "+result);
 
     }
 }
