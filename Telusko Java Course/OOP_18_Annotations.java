@@ -7,6 +7,7 @@ class A{
 }
 
 class B extends A{
+    
     @Override               // Using this annotation @Override tells the compiler that this method is suppoed to be overridden and if I don't do so the compiler will through me an error saying that I didn't override this function while it was meant to be overridden. 
     public void thisisalongfunction(){
         System.out.println("In Class B");

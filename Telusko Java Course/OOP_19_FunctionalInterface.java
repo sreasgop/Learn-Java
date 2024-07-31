@@ -1,6 +1,6 @@
-@FunctionalInterface        // A functional interace is an interface with only one abstract method. 
+@FunctionalInterface        // A functional interace is an interface with only one method. Here we have used Java Annotation feature which will make sure that we don't only have one abstract method in the interface A.
 interface A{
-    void show();        // If we add anymore abstract method we will get a run-time error.
+    void show();        // If we add anymore abstract method we will get a run-time error. Due to the Annocation.
 }
 
 class B implements A{
