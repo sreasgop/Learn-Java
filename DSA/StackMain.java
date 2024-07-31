@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 class Stack{
 
-    int MAX_LIMIT = 100;
+    int MAX_LIMIT;
 
-    int[] stackArray = new int[MAX_LIMIT];
+    int[] stackArray;
     private int top;
 
-    public Stack(){
+    public Stack(int limit){
+        MAX_LIMIT = limit;
+        stackArray = new int[MAX_LIMIT];
         top = -1;
     }
 
@@ -47,18 +49,20 @@ class Stack{
 }
 
 public class StackMain {
-    
+
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
 
-        Stack stackObj = new Stack();
+        Stack stackObj = new Stack(100);
 
         System.out.println("\nMain Menu:\n===========");
         System.out.println("1. Push");
-        System.out.println("2. Pop");
-        System.out.println("2. Traverse");
-        System.out.println("2. Get Top");
+        System.out.println("2. Push Multiple");
+        System.out.println("3. Pop");
+        System.out.println("4. Traverse");
+        System.out.println("5. Get Top");
+        System.out.println("5. Quit");
 
         while(true){
             
@@ -71,17 +75,25 @@ public class StackMain {
                     stackObj.push(sc.nextInt());
                     break;
                 case 2:
+                    System.out.print("Number of elements: ");
+                    int n = sc.nextInt();
+
+                    for(int i=0; i<n; i++){
+                        stackObj.push(sc.nextInt());
+                    }
+                    break;
+                case 3:
                     System.out.println("Element Poppeed: "+ stackObj.pop());
                     break;
-                case 3: 
+                case 4: 
                     System.out.print("Stack: ");
                     stackObj.traverse();
                     break;
-                case 4:
+                case 5:
                     System.out.println("Top: "+stackObj.getTop());;
                     break;
-                case 5:
-                    System.out.println("Exiting Program."); 
+                case 6:
+                    System.out.println("Exiting Program.\n"); 
                     sc.close();
                     return;
             } 
