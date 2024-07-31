@@ -5,7 +5,7 @@ public class PrimeMain {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
+        System.out.print("\nEnter number: ");
         int userInput = sc.nextInt();
 
         sc.close();
@@ -13,7 +13,8 @@ public class PrimeMain {
         boolean isPrime = true;
 
         if(userInput<=1){
-            isPrime = false;
+           System.out.println(userInput + " is neither prime nor composite.\n");
+           return;
         } else {
             for(int i=2; i<=userInput/2; i++){
                 if( userInput%i == 0){
