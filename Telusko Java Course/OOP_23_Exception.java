@@ -29,8 +29,9 @@ public class OOP_23_Exception {
             // Creating our own Exception
             // For example if we want to raise an exception if the result is not even we can do that creating our own exception.
             // We know that ArithmeticException() is a sub class of the Exception() super class. And we can create a sub class of the Exception() superclass and then throw it using the throw keyaord. We should keep in mind that if we throw our own exception, the first catch block that we have written for ArithmeticException() will not work and the latter catch block will be executed as the class we will be throwing is a sub class of Exception() class. 
+
             if(result%2==0){
-                throw new NotEvenException("Result turned out to be an error!");
+                throw new NotEvenException("Result turned out to be an error!");       // The throw statement allows you to create a custom error.
             }
 
             System.out.println(result);
