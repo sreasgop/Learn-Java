@@ -1,8 +1,8 @@
 class Mobile{
 
     // Everytime we create an object there are two steps: 
-    // 1. Class Loads
-    // 2. Object are instantialized
+    // 1. Class Loads                   (Done by Class Laoders)
+    // 2. Object are instantialized     (Done by Constructor of a class)
 
     String brand; 
     int price; 
@@ -11,11 +11,12 @@ class Mobile{
     // This variable belongs to the class and not the instances of this class, which also means that this variable is shared among all the objects of this class.
     static String category;      
 
-
     // This is a static block which is used to define all the values of the static variable of a class. 
     // A static block is only called once unlike a constructor which is called every time a new object is created. 
+    // Note: If we use a Class.forName() method to load a class dynamically only the static block runs and the constructor does, as it assigns value to all the static attributes and the constructor is only required when we try to create an instances. In order to load a class to memory the constructor isn't required. 
     static{
         category = "SmartPhone";
+        System.out.println("Mobile Static Ran!");
     }
 
 
@@ -24,6 +25,7 @@ class Mobile{
     public Mobile(){
         brand = "";
         price = 5000;
+        System.out.println("Mobile Construct Ran!");
     }
 
     public Mobile(String BrandName, String DeviceName, int DevicePrice){
