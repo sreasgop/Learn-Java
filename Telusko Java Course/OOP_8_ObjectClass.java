@@ -61,7 +61,7 @@ public class OOP_8_ObjectClass {
         obj2.model = "Asus Tuf 17"; 
         obj2.price = 130000;
 
-        // the .tosString() method belongs to the Object Class and as Laptop class is a sub class of it we get to use .toSting() with it. 
+        // the .toString() method belongs to the Object Class and as Laptop class is a sub class of it we get to use .toSting() with it. 
         // using .toSting() after the obejct is the same as simply printing the object. 
         System.out.println(obj.toString());     // Any time we print an object we get the name of the class it belongs to followed by the name of the class it has been initialized from.
         System.out.println(obj.equals(obj2));
