@@ -1,6 +1,6 @@
 // Types of Error: 
-// 1. Compile Time Error
-// 2. Run Time Error: The application/program opens just fine and stops in the middle while running is called runtime error. When the execution stops in betweem it's called Run-Time Error.
+// 1. Compile Time Error: These include syntax errors, type mismatches, and other issues that the compiler can detect. They must be fixed before the program can run. Exception handling does not apply to these errors.
+// 2. Run Time Error: The application/program opens just fine and stops in the middle while running is called runtime error. When the execution stops in betweem it's called Run-Time Error. These include syntax errors, type mismatches, and other issues that the compiler can detect. They must be fixed before the program can run. Exception handling does not apply to these errors.
 // 3. Logical Error
 
 public class OOP_22_Error {
