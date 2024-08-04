@@ -1,0 +1,99 @@
+Topics of Core Java:
+00:00:00 Intro
+00:05:04 JDK setup
+00:13:21 First code in java
+00:24:35 How Java Works
+00:36:34 Variables
+00:48:11 Data types
+01:00:28 Literal
+01:04:49 Type conversion
+01:17:20 Assignment Operators
+01:27:32 Relational Operators 
+01:35:35 Logical Operators
+01:46:47 If Else
+01:59:45 If Else if
+02:05:18 ternary
+02:09:51 Switch Statement
+02:17:50 Need For Loop
+02:21:12 While Loop
+02:33:35 Do While Loop
+02:36:48 For Loop
+02:50:06 Which Loop To Use
+02:51:48 Class And Object Theory
+02:57:30 Class and Object Practical
+03:13:03 JDK JRE JVM
+03:18:22 Methods
+03:29:44 Method Overloading
+03:35:41 Stack And Heap
+03:48:12 Need of an Array
+03:52:01 Creation of Array
+03:59:28 Multi Dimensional Array
+04:12:30 Jagged and 3D Array
+04:18:08 Drawbacks of Array
+04:20:54 Array of Objects
+04:29:42 Enhanced for loop
+04:35:07 What is String
+04:42:24 Mutable vs Immutable string
+04:48:43 StringBuffer and StringBuilder
+04:54:23 static variable
+05:01:26 static block
+05:08:43 static method
+05:13:25 Encapsulation
+05:25:04 Getters and setters
+05:27:55 this keyword
+05:37:36 constructor
+05:44:35 default vs parameterized constructor
+05:49:36 this and super method
+06:01:42 Naming Convention
+06:06:08 Anonymous Object
+06:10:51 Need of Inheritance
+06:17:06 What is Inheritance
+06:25:50 Single and Multilevel inheritance
+06:29:41 Multiple Inheritance
+06:36:16 Method Overriding
+06:44:05 packages
+06:56:20 Access Modifiers
+07:04:42 Polymorphism
+07:08:31 Dynamic Method Dispatch
+07:16:29 Final keyword
+07:22:43 Object Class equals toString hashcode
+07:34:41 Upcasting and Downcasting
+07:41:17 abstract keyword
+07:53:26 Inner class
+07:59:03 Anonymous Inner class
+08:04:11 abstract and anonymous inner class
+08:07:22 What is Interface
+08:15:18 More on Interfaces
+08:18:40 Need of Interface
+08:27:11 What is Enum
+08:34:04 enum if and switch
+08:37:59 Enum Class
+08:45:45 What is Annotation
+08:53:14 Functional Interface
+08:56:43 Lambda Expression
+09:02:51 Lambda Expression with return
+09:06:08 Types of Interface
+09:10:41 What is Exception
+09:15:57 Exception Handling using try catch
+09:21:58 try with multiple catch
+09:32:14 Exception Hierarchy
+09:36:30 Exception throw keyword
+09:42:05 Custom exception
+09:45:35 Ducking Exception using throws
+09:55:29 User Input using BufferedReader and Scanner
+10:07:17 try with resources
+10:15:25 Threads
+10:20:37 Multiple Threads
+10:31:58 Thread Priority and Sleep
+10:39:20 Runnable vs Thread
+10:47:45 Race Condition
+11:00:15 Thread states
+11:03:45 Collection API
+11:08:30 ArrayList
+11:20:23 Set
+11:27:30 Map
+11:37:32 Comparator vs Comparable
+11:53:15 Need of Stream API
+12:00:12 forEach Method
+12:05:01 Stream API
+12:14:09 Map Filter Reduce Sorted
