@@ -28,13 +28,19 @@ class B extends Thread{
 public class OOP_27_Threads {
     public static void main(String[] args){
         
-        // We can't control the operation of each thread individually 
-
+        // We can't control the operation of each thread individually as it's managed by the scheduler and it depends on it. However we can suggest the priority of a thread using the methods offered by the thread class. 
+        
         A obj = new A();
         obj.start();
-
+        
+        obj.setPriority(Thread.MAX_PRIORITY);
+        
         B obj1 = new B();
         obj1.start();
 
+        System.out.println(obj.getPriority());
+        
+        
+        System.out.println(obj.getPriority());
     }
 }
