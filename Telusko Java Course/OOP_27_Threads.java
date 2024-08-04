@@ -32,7 +32,6 @@ public class OOP_27_Threads {
         
         A obj = new A();
         obj.start();
-        
         obj.setPriority(Thread.MAX_PRIORITY);
         
         B obj1 = new B();
