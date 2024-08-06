@@ -25,9 +25,11 @@ public class OOP_33_List_LinkedLiist {
                 case 2: 
                     System.out.print("Enter element to add at Beginning: ");
                     llobj.addFirst(sc.nextInt());
+                    break;
                 case 3:
                     System.out.print("Enter Element to add at Ending: ");
                     llobj.addLast(sc.nextInt());
+                    break;
                 case 4:
                     System.out.print("Enter element to delete: ");
                     int dataIndex = llobj.indexOf(sc.nextInt());
@@ -67,9 +69,9 @@ public class OOP_33_List_LinkedLiist {
                         System.out.println("Incorrect input! Try again.");
                     }
                     break;
-                case 9:
+                case 8:
                     printMenu();
-                case 10:
+                case 9:
                     sc.close();
                     System.out.println("Exitting Program.");
                     return;
