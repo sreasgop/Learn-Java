@@ -70,6 +70,7 @@ public class OOP_33_List_LinkedLiist {
                 case 9:
                     printMenu();
                 case 10:
+                    sc.close();
                     System.out.println("Exitting Program.");
                     return;
             }
@@ -89,11 +90,4 @@ public class OOP_33_List_LinkedLiist {
         System.out.println("9. Exit");
         
     }
-        
-    public static void display(){
-        ;
-    }
-
 }
-
-
