@@ -19,6 +19,11 @@ public class OOP_32_List_ArrayList {
         listobj.add(30);
         listobj.add(40);
         listobj.add(50);
+        listobj.add(60);
+        listobj.add(70);
+        listobj.add(10);
+        listobj.add(20);
+        listobj.add(10);
 
         System.out.println(listobj);
 
@@ -29,6 +34,9 @@ public class OOP_32_List_ArrayList {
             System.out.print(num+" ");
         }
         System.out.println();
+
+        // .size(): Returns the number of elements in the list.
+        System.out.println("Size of the list: " + listobj.size());
 
         // In List reference types we can access the elements using their index values using the .get method. 
         System.out.println("Element at 3rd Index: " + listobj.get(3));
@@ -42,6 +50,10 @@ public class OOP_32_List_ArrayList {
         
         // If we try to use .indexOf() for any value that doesn't exist in a list we will get -1
         System.out.println("Index of 300: "+listobj.indexOf(300));
+
+        // Using the .remove() method we can remove elements of a specific index
+        listobj.remove(8);
+        System.out.println("After removing element at 8th index: " + listobj);
 
         // We can wipe out and delete all the elements of a List Reference Type ArrayList object using the .clear() method. 
         listobj.clear();
@@ -66,10 +78,14 @@ public class OOP_32_List_ArrayList {
 
         // Using the .addfirst() method we can directly add at beginning of the list. 
         listobj.addFirst(99);
-        System.out.println(listobj);
+        System.out.println("Adding element at beginning: " + listobj);
 
         // Using the .addLast() method we can directly add the the last of the list.
         listobj.addLast(90);
+        System.out.println("Adding elemeent in the end: " + listobj);
+
+        // set(int index, E element): Replaces the element at the specified position with the specified element.
+        listobj.set(0, null);
         System.out.println(listobj);
 
     }
