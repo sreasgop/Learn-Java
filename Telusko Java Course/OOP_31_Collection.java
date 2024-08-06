@@ -1,6 +1,10 @@
-// Collection API: Concept
-// Collection: Interface
-// Collections: A class that implements the collection interface.
+// The Collection interface in Java is a fundamental part of the Java Collections Framework and is found in the java.util package. Collection is the root interface for the Java Collections Framework (excluding maps). It defines the most common methods used to manipulate a collection of objects.
+
+// Several sub-interfaces extend Collection, including List, Set, and Queue, each adding specific behaviors:
+// List: An ordered collection that allows duplicates. List is further implemented by two classes: ArrayList and LinkedList.
+// Set: A collection that does not allow duplicates. Set is further implemented by two classes: HashSet and LinkedHashSet.
+// Queue: A collection designed for holding elements prior to processing, typically in FIFO (first-in, first-out) order. Queue is further implemented by Dequeue. 
+
 
 import java.util.ArrayList;
 import java.util.Collection;        // In order to be able to use the collection framework we need to import it as it is in java.util package. 
