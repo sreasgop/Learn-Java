@@ -1,9 +1,17 @@
+// The List interface in Java is a part of the Java Collections Framework and is found in the java.util package. It represents an ordered collection (also known as a sequence) of elements.
+
+// Implementation of List: The List Interface is implemented by the following class, and we know that we cannot create an object of an interface directly hence we are required to create an object of a class that implements an interface. These are the two classes that implements the List Interface: 
+// ArrayList: Provides a resizable array. It offers constant-time access to elements but may be slower for insertion and deletion, especially in the middle of the list.
+// LinkedList: Implements a doubly-linked list. It is faster for insertions and deletions but slower for random access compared to ArrayList.
+
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class OOP_32_List_ArrayList {
     public static void main(String[] args) {
         
+        // Creating a ArrayList Object assigned to the Reference Variable of type List.
         List<Integer> listobj = new ArrayList<Integer>();
 
         listobj.add(10);
@@ -38,6 +46,9 @@ public class OOP_32_List_ArrayList {
         // We can wipe out and delete all the elements of a List Reference Type ArrayList object using the .clear() method. 
         listobj.clear();
         System.out.println("List Reference type of ArrayList Object: " + listobj);
+
+        // the isEmpty() method returns true if the list contains no elements. 
+        System.out.println("Is the List Empty: "+listobj.isEmpty());
 
         // Repopulating the ArrayList Object with values
         listobj.add(10);
