@@ -1,12 +1,13 @@
 // An array is a collection of elements of same data type stored in contigious memory. We can only store a fixed set of elements in a Java Array. 
 // Array in Java is index-based, and indexing starts at 0 and goes till length-1.
 // In Java we can get the length of an array using the .length member. 
-// Java supports anonymoyus array as wel.
+
+// Java supports anonymoyus array as welL.
 
 // What is an Anonymous Array?
 // In Java, an "anonymous array" refers to an array that is created without being assigned to a variable. Instead, it is passed directly to a method or used immediately after its creation. This technique is useful when you need to quickly create and use an array without the need to reuse it later
 
-// An example has been used to demonstrate the use of Anonymous Array: Line No. 72.
+// An example has been used to demonstrate the use of Anonymous Array: Line No. 73.
 
 public class Array01{
 
