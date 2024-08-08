@@ -41,7 +41,6 @@ public class OOP_34_Set_HashSet{
 
         // Using an Iterator of Integer type to access the values of the Set Object. 
         Iterator<Integer> iteratorObj = setObj.iterator();
-
         while(iteratorObj.hasNext()){
             System.out.print(iteratorObj.next()+" ");
         }
