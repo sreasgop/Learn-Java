@@ -1,8 +1,15 @@
+// Java collection class is used exclusively with static methods that operate on or return collections. It inherits Object class.
+
+// The important points about Java Collections class are:
+// Java Collection class supports the polymorphic algorithms that operate on collections.
+// Java Collection class throws a NullPointerException if the collections or class objects provided to them are null.
+
+
 import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
-public class OOP_36_CollectionSorting {
+public class OOP_37_CollectionSorting {
     public static void main(String[] args) {
         
         List<Integer> listobj = new ArrayList<>();
