@@ -41,7 +41,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Hashtable;
 
-public class OOP_35_Map{
+public class OOP_36_Map{
     public static void main(String[] args){
 
         // HASHMAP
