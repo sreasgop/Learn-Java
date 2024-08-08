@@ -23,6 +23,11 @@ class Mobile implements Computer{
     }
 }
 
+class MacBook extends Laptop{
+    public void show(){
+        System.out.println("I am an apple product!");
+    }
+}
 
 class Programmer{
     public void Code(Computer Device){
@@ -38,6 +43,8 @@ public class OOP_14 {
         Computer machine1 = new Desktop(); 
         Computer machine2 = new Laptop();
         Computer machine3 = new Mobile(); 
+        
+        Computer applemachine = new MacBook();
 
 
         // Developer: 
@@ -52,6 +59,8 @@ public class OOP_14 {
         System.out.print(machine3.getClass().getSimpleName()+" = ");
         newEmployee.Code(machine3);
 
+        System.out.print(applemachine.getClass().getSimpleName()+" = ");
+        newEmployee.Code(applemachine);
 
     }    
 }
