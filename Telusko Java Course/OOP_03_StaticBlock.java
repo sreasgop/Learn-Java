@@ -13,7 +13,7 @@ class Mobile{
 
     // This is a static block which is used to define all the values of the static variable of a class. 
     // A static block is only called once unlike a constructor which is called every time a new object is created. 
-    // Note: If we use a Class.forName() method to load a class dynamically only the static block runs and the constructor does, as it assigns value to all the static attributes and the constructor is only required when we try to create an instances. In order to load a class to memory the constructor isn't required. 
+    // Note: If we use a Class.forName() method to load a class dynamically only the static block runs and the constructor does not, as it assigns value to all the static attributes and the constructor is only required when we try to create an instances. In order to load a class to memory the constructor isn't required but whenever we try to load a class to memory the static method runs.
     static{
         category = "SmartPhone";
         System.out.println("Mobile Static Ran!");
@@ -54,7 +54,7 @@ class Mobile{
 }
 
 
-public class OOP_03 {
+public class OOP_03_StaticBlock {
     public static void main(String[] args) throws ClassNotFoundException {
         
         // Class.forName("Mobile");     // This will load this class in the class loader which will call the static block. 
