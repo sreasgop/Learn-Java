@@ -35,10 +35,12 @@ public class OOP_40_CollectionSortClass {
         studs.add(new Student("Sanjib Kumar Sah", 20));
         studs.add(new Student("Sayane Gop", 16));
 
+        System.out.println("\nStudent List before sorting: ");
         for (Student student : studs) {
             System.out.println(student+" ");
         }
-        
+        System.out.println();
+
         // We can't simply use the Collections.sort() static method to sort this ArrayList of Student data type. 
         // Because the Stuednt data type doesn't inherit the Comparable interface and the compareTo() method of the Comparable interface isn't overridden in the Student class, as a result if we use .sort() without a Comparator we will get error. 
         
@@ -55,8 +57,45 @@ public class OOP_40_CollectionSortClass {
             }
         };
 
+        // Calling the .sort() static method of the Collections Class along with the Comparator being passed in the argument.
         Collections.sort(studs, com);
 
+        System.out.println("Student List after sorting: ");
+        for (Student student : studs) {
+            System.out.println(student+" ");
+        }
+        System.out.println();
+
+
+
+
+
+        // Creating another List Reference Type variable and initializing it as an Object of ArrayList of Student type.
+        List<Student> newStudList = new ArrayList<>();
+
+        newStudList.add(new Student("Ravi Roy", 21));
+        newStudList.add(new Student("Rahul Gupta", 22));
+        newStudList.add(new Student("Akash Kanrar", 19));
+        newStudList.add(new Student("Soham Chakraborty", 20));
+        newStudList.add(new Student("Parth Sarathi", 20));
+
+        System.out.println("\nNew student list before sorting:");
+        for (Student student: newStudList) {
+            System.out.println(student);
+        }
+        System.out.println();
+
+        // We know that Comparator is a functional interface, which means that it has got only one abstract method which is the .compare() one. As a result we can use a short hand lamda expression to implement this interface as well. 
+        // Creating a Lamda Expression to implement the Comparator interface
+        Comparator<Student> lamdaCom = (i, j) -> i.age>j.age?1:-1;
         
+        // Calling the .sort() static method by passing the lamda implementation of the Comparator functional interface. 
+        Collections.sort(newStudList, lamdaCom);
+
+        System.out.println("New student list after sorting: ");
+        for(Student newStudent: newStudList){
+            System.out.println(newStudent);
+        }
+        System.out.println();
     }
 }
