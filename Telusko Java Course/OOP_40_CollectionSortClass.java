@@ -1,3 +1,8 @@
+// In this program we are going to see, how to sort an ArrayList made up of elements of a certain class using the Collections.sort() static method and using an anonymous class of the Comparator Interface. 
+
+// We know that Comparator interface has an abstract method called compare, which takes two values and helps us compare entities using the .sort() method. The Anonymous Class of the Comparator Intercace can be passed in the .sort() method along the reference type variable name of the collection that we want to solve. In this program we will sort the 
+
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,8 +39,9 @@ public class OOP_40_CollectionSortClass {
             System.out.println(student+" ");
         }
         
-        // I can't simply use the Collections.sort() static method to sort this ArrayList of Student data type. 
+        // We can't simply use the Collections.sort() static method to sort this ArrayList of Student data type. 
         // Because the Stuednt data type doesn't inherit the Comparable interface and the compareTo() method of the Comparable interface isn't overridden in the Student class, as a result if we use .sort() without a Comparator we will get error. 
+        
         // Collections.sort(studs);     // This will throw an error.
 
         // Creating a anonymous class of the Comparator interface, that helps compare two Student elements of the ArrayList of Student on the basis of their age.
@@ -48,7 +54,6 @@ public class OOP_40_CollectionSortClass {
                 }
             }
         };
-
 
         Collections.sort(studs, com);
 
