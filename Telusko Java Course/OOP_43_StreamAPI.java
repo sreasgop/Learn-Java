@@ -1,3 +1,5 @@
+// Stream API let's us chain methods of the Stream Interface and this enables us to perform complex operations on ArrayLists in less lines of code and that too without comprising on the actual values of the ArrayList as implementations of Stream interface gives us a temporary copy of the ArrayList. 
+
 import java.util.List;
 import java.util.Arrays;
 import java.util.stream.Stream;
