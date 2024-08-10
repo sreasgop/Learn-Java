@@ -10,7 +10,7 @@ public class OOP_43_StreamAPI {
         
         List<Integer> listobj = Arrays.asList(2, 4, 3,5,7,6,8,10);
 
-        // The .stream() method of the ArrayList Class returns the Object of Stream Interface
+        // The .stream() method of the Collection Interface that returns the Object of Stream Interface.
         // Whatever values we have in the ArrayList is available in the S1 steram objet. And whatever changes we make to the stream the changes are not going to affect the actual list. 
         Stream<Integer> s1 = listobj.stream();
 
@@ -43,5 +43,13 @@ public class OOP_43_StreamAPI {
         // Note: Over here as well, each stream was closed right after it perform it's defined operation and each method returned a new Stream altogeher.  
         int sumOfArray = listobj.stream().filter(n -> n%2==0).map(n->n+1).reduce(0, (i,j)-> i+j);
         System.out.println(sumOfArray);
+        System.out.println();
+
+        // .sorted() method of the Stream interface returns the Stream object in a sorted manner.
+        // Creating another Stream object of the ArrayList reference type named "listObj" using .stream() method
+        Stream<Integer> s5 = listobj.stream().sorted();
+        System.out.println("Sorted Stream: ");
+        s5.forEach(n-> System.out.print(n+" "));
+        System.out.println();
     }
 }
