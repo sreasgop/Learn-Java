@@ -95,6 +95,7 @@ public class Array01{
 
     }
     
+    // Creating a method which receives an array as a parameter and performs operation on it to find the maximum valued element in an array.
     static void max(int arr[]){
         int max_val = arr[0];
         for(int i: arr){
