@@ -1,5 +1,6 @@
+// The Predicate interface in Java is a functional interface that is used to represent a simple condition or test. It takes one input and returns a boolean value (true or false), indicating whether the input satisfies the condition.
+
 import java.util.List; 
-// import java.util.ArrayList; 
 import java.util.Arrays; 
 import java.util.stream.Stream;
 import java.util.function.Predicate;
@@ -26,6 +27,21 @@ public class OOP_44_StreamAPIPredicate {
         // Let us take a deeper look at how each one of the methods of Stream really works:
         // The .filter() method of the Stream interface returns a stream consisting of the elements of this stream that match the given Predicate. In other words the .filter() method takes an object of any implementation of the Predicate Interface. Predicate is a functional interface that represents a condition or a test that returns a boolean value (true or false).
 
+
+        // Predicate Interface and it's .test() abstract method which method takes one argument of any type and returns a boolean value.
+        // @FunctionalInterface
+        // public interface Predicate<T> {
+        //     boolean test(T t);
+        // }
+
+        // T: The type of the input that the Predicate will evaluate.
+        // boolean: The result of the test method, which is true if the input satisfies the condition, and false otherwise.
+
+        // Method test(T t): This method is where you define the condition that the input t must meet.
+
+
+
+        
         // Creaing an anonyous class implementation of the Predicate Funtional Interface:
         // Afterwards, we can pass the reference name of the anonymous class implementatoin of the Predicate Functional Interface to the .filter() method of any Stream implementation to be able to return the elements of the stream that match the given condition of the Predicate. 
         Predicate<Integer> newPredicate = new Predicate<Integer>() {
@@ -59,10 +75,6 @@ public class OOP_44_StreamAPIPredicate {
         // s1.filter(n-> n%2==0?true:false);
         // OR
         // s1.filter(n -> n%2==0);       // This would also work as we were anyway returning true if the condition n%2==0 was true and false if the condition wasn't true. 
-
-
-
-
 
     }
 }
