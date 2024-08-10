@@ -10,17 +10,6 @@
 // An example has been used to demonstrate the use of Anonymous Array: Line No. 73.
 
 public class Array01{
-
-    static void max(int arr[]){
-        int max_val = arr[0];
-        for(int i: arr){
-            if(i>max_val){
-                max_val = i;
-            }
-        }
-        System.out.println("Maximum Value: "+max_val);
-    }
-
     public static void main(String[] args) {
 
         // CREATING AN ARRAY: 
@@ -50,10 +39,12 @@ public class Array01{
         System.out.println();
 
         // Printing the values of the array using enhanced for loop/for each loop:
+        // The for-each loop variables creates a copy of the elements before printing them, As a result we can easily iterate through each element in the array but using the for-each loop we cannot modify or alter the values and trying to do so will only change the value of the loop variable which is a copy and not the actual element in the array. 
         for(int num: arr){
             System.out.print(num+" ");
         }
         System.out.println();
+
 
 
         // CREATING ANOTHER ARRAY: 
@@ -67,6 +58,9 @@ public class Array01{
         System.out.println();
 
 
+
+
+
         // Using Anonymous Array to call the Array01.max() method: 
         // An anonymous array is nothing but an array that isn't assigned to a variable name. 
         // NOTE: We can't pass the same array to multiple methods or functions as we don't have a variable name attached to it. 
@@ -74,14 +68,20 @@ public class Array01{
         System.out.println();
 
 
+
+
+
         // Creating a Copy Array using the .arraycopy() method: 
         int[] copyarr = new int[5];
 
-        // .arraycopy() takes the array that we want to copy from as the 1st parameter. 
-        // .arraycopy() takes the index of the array where we want to copy from as the 2nd parameter.
-        // .arraycopy() takes the array that we want to copy to as it's 3rd paraemter.
-        // .arraycopy() takes the starting index where we want to copy to of the array where things are being coopied.
-        // .arraycopy() takes the ending index where we want to copy till in the array where things are being copied. 
+        // System.arraycopy() is a method used to efficiently copy data between arrays. 
+        // It takes 5 parameters:
+        // 1st Parameter (src): The source array from which elements will be copied.
+        // 2nd Parameter (srcPos): The starting index in the source array from which copying begins.
+        // 3rd Parameter (dest): The destination array where the elements will be copied to.
+        // 4th Parameter (destPos): The starting index in the destination array where elements will be placed.
+        // 5th Parameter (length): The number of elements to copy from the source to the destination, starting from scrPos (2nd Parameter).
+
         System.arraycopy(newarr, 2, copyarr, 0, 5);
         // In this example, the 1st parameter is newarr, which means we are copying from this array. 
         // In the 2nd parameter we have 2, which means we are going to copy from the 2nd parameter of the newarr. 
@@ -94,4 +94,15 @@ public class Array01{
 
 
     }
+    
+    static void max(int arr[]){
+        int max_val = arr[0];
+        for(int i: arr){
+            if(i>max_val){
+                max_val = i;
+            }
+        }
+        System.out.println("Maximum Value: "+max_val);
+    }
+
 }
