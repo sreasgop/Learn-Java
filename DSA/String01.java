@@ -64,15 +64,16 @@ public class String01 {
         System.out.println("Memory Address of the String literal of str1: " + str1.hashCode());
         System.out.println("Memory Address of the String literal of str2: " + str2.hashCode());
         System.out.println("Memory Address of the String literal of str3: " + str3.hashCode());
-
-
+        
+        
         // An array of characters:
-        char[] charArr = {'T','e', 'c', 'h', 'n', 'o'};
-
+        char[] charArr = {'S','r', 'e', 'a', 's'};
+        
         // A string made from a sequence of characters:
-        String str = new String(charArr);
+        String str4 = new String(charArr);
+        // Note: As str4 has been created using the new keyword it's supposed to be a new Object in the heap memory with separate memory address, however as it too has the same string literal if we print the .hashCode() we will be able to see this Object points to the same data from the String constant pool as well. 
 
-        System.out.println(str);
+        System.out.println(str4);
 
 
     }
