@@ -11,6 +11,8 @@ public class Array02_RandomElements {
         System.out.print("Enter number of elements: ");
         int n = sc.nextInt();
 
+        sc.close();
+
         int[] arr = new int[n];
 
         for(int i=0; i< arr.length; i++){
