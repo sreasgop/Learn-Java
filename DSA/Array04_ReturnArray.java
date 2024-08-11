@@ -1,7 +1,7 @@
 // Returning Array from Method:
 // In the following program we will learn how to create a method that returns an array, just the way we mention the type of value a method is meant to return while creating it. In case of creating a method that returns an array we are suppposed to do it the same way. 
 
-public class Array03_ReturnArray {
+public class Array04_ReturnArray {
     
     // The following method returns an integer array of even numbers:
     static int[] getArr(){
