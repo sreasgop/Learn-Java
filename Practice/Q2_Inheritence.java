@@ -24,7 +24,7 @@ class Vehicle{
         return year;
     }
 
-    
+    @Override
     public String toString() {
         return "\nCar\n[ brand = " + brand + " ]\n[ model = " + model + " ]\n[ year = " + year + " ]\n";
     }
