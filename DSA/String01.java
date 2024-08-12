@@ -1,5 +1,7 @@
 // The String class is found in java.lang.String, which doesn't need to be explicitly called in a java program. The String class implements Serializeable, Comparable and CharSqeuence interfaces. 
+
 // String is an object that represents a sequence of char values. An Array of characters works same as a string in Java. Generally, String is a sequence of characters. But in Java, string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object.
+
 // The Java String is immutable which means it cannot be changed. Whenever we change any string, a new instance is created. For mutable strings, you can use StringBuffer and StringBuilder class
 
 public class String01 {
