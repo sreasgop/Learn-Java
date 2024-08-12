@@ -1,0 +1,59 @@
+1. Classes and Objects
+
+    Question: Create a class Book with properties like title, author, price, and ISBN. Write methods to set and get the values of these properties. Create an object of this class and set the values using the methods.
+    Focus: Basic class creation, object instantiation, and encapsulation.
+
+2. Inheritance
+
+    Question: Create a class Vehicle with properties make, model, and year. Then create a subclass Car that adds properties like numberOfDoors and convertible. Write methods in both classes to display their respective details.
+    Focus: Understanding "is-a" relationships and using the extends keyword.
+
+3. Polymorphism
+
+    Question: Create a base class Shape with a method calculateArea(). Then create subclasses Circle, Rectangle, and Triangle, each overriding the calculateArea() method to provide their specific implementations. Demonstrate polymorphism by creating an array of Shape objects and calculating the area for different shapes.
+    Focus: Method overriding and runtime polymorphism.
+
+4. Encapsulation
+
+    Question: Create a class Account with private properties accountNumber, balance, and ownerName. Provide public getter and setter methods for these properties. Implement a method deposit() to add money to the account and withdraw() to subtract money from the account, ensuring the balance doesn't go negative.
+    Focus: Encapsulation and data hiding.
+
+5. Abstraction
+
+    Question: Create an abstract class Employee with properties name and id, and an abstract method calculateSalary(). Create subclasses FullTimeEmployee and PartTimeEmployee that provide specific implementations of the calculateSalary() method.
+    Focus: Abstract classes, abstract methods, and partial implementation.
+
+6. Composition ("Has-a" relationship)
+
+    Question: Create a class Engine with properties like horsepower and type. Then create a class Car that contains an Engine object and additional properties like make and model. Write methods to start the car, which should include starting the engine.
+    Focus: Composition, object containment, and delegation.
+
+7. Interface Implementation
+
+    Question: Define an interface Animal with methods eat() and sleep(). Implement this interface in classes Dog and Cat, providing specific implementations for each method. Create objects of Dog and Cat and call their methods.
+    Focus: Interface creation and implementation, achieving polymorphism through interfaces.
+
+8. Constructor Overloading
+
+    Question: Create a class Person with properties name and age. Write multiple constructors: one that takes no arguments, one that takes only name, and one that takes both name and age. Demonstrate the use of these constructors by creating different Person objects.
+    Focus: Constructor overloading and understanding how different constructors are invoked.
+
+9. Method Overloading
+
+    Question: Create a class Calculator with an add() method that can take two integers, two doubles, or three integers. Demonstrate method overloading by calling add() with different sets of arguments.
+    Focus: Method overloading, compile-time polymorphism.
+
+10. Exception Handling
+
+    Question: Create a class BankAccount with methods deposit() and withdraw(). Implement exception handling to throw an InsufficientFundsException if a withdrawal request is more than the current balance. Write code to test this exception handling.
+    Focus: Custom exceptions, try-catch blocks, and robust error handling.
+
+11. Access Modifiers
+
+    Question: Create a class Student with properties like name, rollNumber, and grade. Use different access modifiers (private, protected, public, default) for these properties. Write a class in the same package and another in a different package to test access to these properties.
+    Focus: Understanding the scope and accessibility provided by different access modifiers.
+
+12. Aggregation and Composition
+
+    Question: Create a class Library that contains a collection of Book objects. Demonstrate aggregation by allowing books to exist independently of the library. Then, modify the example to show composition by creating a class Page within Book, where the pages cannot exist independently of the book.
+    Focus: Differentiating between aggregation and composition relationships.
