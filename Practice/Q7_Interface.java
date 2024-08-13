@@ -5,3 +5,45 @@ interface Animal{
     void eat();
     void sleep();
 }
+
+class Dog implements Animal{
+    
+    @Override
+    public void eat(){
+        System.out.println("Dog eats!");
+    }
+    
+    @Override
+    public void sleep(){
+        System.out.println("Dot Sleeps!");
+    }
+}
+
+class Cat implements Animal{
+
+    @Override
+    public void eat() {
+        System.out.println("Cat eats!");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Cat Sleeps!");
+    }
+
+}
+
+public class Q7_Interface {
+    public static void main(String[] args) {
+
+        Animal aniObj1 = new Dog();
+        aniObj1.eat();
+        aniObj1.sleep();
+
+        System.out.println();
+
+        Animal aniObj2 = new Cat();
+        aniObj2.eat();
+        aniObj2.sleep();
+    }
+}
