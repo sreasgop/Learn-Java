@@ -50,7 +50,7 @@ class Car{
 
 }
 
-public class Q5_InheritenceHAS{
+public class Q6_InheritenceHas{
     public static void main(String[] args) {
 
         Car carObj1 = new Car("BMW", "i8", "Hybrid (Electric + Petrol V6", 650);
