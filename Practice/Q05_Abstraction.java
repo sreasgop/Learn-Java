@@ -89,7 +89,7 @@ class PartTimeEmployee extends Employee{
     }
 }
 
-public class Q5_Abstraction {
+public class Q05_Abstraction {
     public static void main(String[] args){
 
         Employee empObj1 = new PartTimeEmployee("Soutrika Das");

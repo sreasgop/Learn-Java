@@ -87,7 +87,7 @@ class Account{
     
 }
 
-public class Q4_Encapsulation {
+public class Q04_Encapsulation {
     public static void main(String[] args) {
         
         Account accObj1 = new Account("Chandra Sreas Gop", 5500);

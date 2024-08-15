@@ -87,7 +87,7 @@ class Book{
 
 }
 
-public class Q1_ClassAndObjects {
+public class Q01_ClassAndObjects {
     public static void main(String[] args) {
         
         // Creating a book object by directly passing the title of the book, name of author and price of the book in the parameter of the constructor. 

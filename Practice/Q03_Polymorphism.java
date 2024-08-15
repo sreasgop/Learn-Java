@@ -45,7 +45,7 @@ class Square extends Shape{
     }
 }
 
-public class Q3_Polumorphism {
+public class Q03_Polumorphism {
     public static void main(String[] args) {
         
         Shape[] shapArr = new Shape[3];

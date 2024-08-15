@@ -32,7 +32,7 @@ class Calculator{
 }
 
 
-public class Q9_MethodOverloading{
+public class Q09_MethodOverloading{
     public static void main(String[] args) {
         
         // Using the method that takes two parameters:

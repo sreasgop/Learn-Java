@@ -45,7 +45,7 @@ class Person{
     }
 }
 
-public class Q8_Constructor {
+public class Q08_Constructor {
     public static void main(String[] args) {
         
         // Creating a new Person using the default constructor

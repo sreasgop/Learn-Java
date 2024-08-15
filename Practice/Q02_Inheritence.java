@@ -69,7 +69,7 @@ class Car extends Vehicle{
 }
 
 
-public class Q2_Inheritence {
+public class Q02_Inheritence {
     public static void main(String[] args) {
 
         // Creating an Object of Car Class:

@@ -33,7 +33,7 @@ class Cat implements Animal{
 
 }
 
-public class Q7_Interface {
+public class Q07_Interface {
     public static void main(String[] args) {
 
         Animal aniObj1 = new Dog();
