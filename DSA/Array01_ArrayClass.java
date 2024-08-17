@@ -20,5 +20,6 @@ public class Array01_ArrayClass {
 
         Array arr3 = new Array();
         System.out.println(arr3);
+        
     }
 }
