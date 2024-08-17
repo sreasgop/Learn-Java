@@ -1,4 +1,4 @@
-// 
+// Given an array, we have to find the largest element in the array.
 
 public class Array02_LargestElement {
     
