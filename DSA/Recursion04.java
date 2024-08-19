@@ -2,14 +2,14 @@
 
 public class Recursion04 {
     public static void main(String[] args) {
-        printNum(10, 1);
+        printNum(10);
     }
 
-    static void printNum(int i, int n){
-        if(i<n){
+    static void printNum(int n){
+        if(n==0){
             return;
         }
-        System.out.print(i+" ");
-        printNum(i-1, n);
+        System.out.print(n + " ");
+        printNum(n-1);
     }
 }
