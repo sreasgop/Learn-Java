@@ -5,7 +5,7 @@ public class Recursion01 {
 
     static int count = 0;
     static void printNum(){
-        if(count == 4){
+        if(count > 3){
             return;
         }
         System.out.print(count++ + " ");
