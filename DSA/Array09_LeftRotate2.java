@@ -2,9 +2,10 @@
 
 public class Array09_LeftRotate2 {
     public static void main(String[] args) {
+
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        leftRotateD(arr1, 2);
+        leftRotateD(arr1, 11);
 
         for (int i : arr1) {
             System.out.print(i+" ");
