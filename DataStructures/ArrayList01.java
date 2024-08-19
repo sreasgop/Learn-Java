@@ -22,16 +22,16 @@ public class ArrayList01 {
         // NON-GENERIC Vs GENERIC Collection:
         // Creating a non-generic collection: Using non-generic collections enabled us to be able to have data of multiple data types within the same collectio
         // Java collection framework was non-generic before JDK 1.5.
-        ArrayList listObj1 = new ArrayList<>();
+        // ArrayList listObj1 = new ArrayList<>();
 
-        listObj1.add(10);
-        listObj1.add(20);
-        listObj1.add("Sreas");
-        listObj1.add(3.1415f);
-        listObj1.add(true);
+        // listObj1.add(10);
+        // listObj1.add(20);
+        // listObj1.add("Sreas");
+        // listObj1.add(3.1415f);
+        // listObj1.add(true);
 
-        System.out.println(listObj1);
-        System.out.println(listObj1.get(2));
+        // System.out.println(listObj1);
+        // System.out.println(listObj1.get(2));
 
 
 
@@ -60,7 +60,7 @@ public class ArrayList01 {
         }
         System.out.println();
 
-        
+
 
         // Traversing an object of ArrayList in reverse using a ListIterator
         ListIterator<Integer> it2 = listObj.listIterator(listObj.size());
