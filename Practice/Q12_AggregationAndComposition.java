@@ -28,7 +28,6 @@ class Page {
     }
 }
 
-
 class Book {
 
     private String title;
@@ -43,7 +42,7 @@ class Book {
     public Book(String title, String author, String genre) {
         this.title = title;
         this.author = author;
-        this.genre = genre; 
+        this.genre = genre;
         this.pages = new ArrayList<>();
     }
 
@@ -91,7 +90,6 @@ class Book {
 
 }
 
-
 class Library {
 
     private String name;
@@ -104,9 +102,9 @@ class Library {
         this.name = name;
         bookList = new ArrayList<>();
     }
-    
+
     // Setter Methods
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -138,23 +136,28 @@ public class Q12_AggregationAndComposition {
         Book bk4 = new Book("It starts with us", "Collen Hoover", "Romance");
 
         // Adding pages to the Books:
-        bk1.addPage(3, "About 13.5 billion years ago, matter, energy, time and space came into being in what is known as the Big Bang. The story of these fundamental forces of our universe is called physics.");
-        bk1.addPage(4, "There were humans long before there was history. Animals much like modern humans first appeared about 2.5 million years ago. But for countless generations they didnot stand out from the myriad other organisms with which they shared their habitats.");
+        bk1.addPage(3,
+                "About 13.5 billion years ago, matter, energy, time and space came into being in what is known as the Big Bang. The story of these fundamental forces of our universe is called physics.");
+        bk1.addPage(4,
+                "There were humans long before there was history. Animals much like modern humans first appeared about 2.5 million years ago. But for countless generations they didnot stand out from the myriad other organisms with which they shared their habitats.");
 
         // Printing bk1 object of the Book Class:
         System.out.println(bk1);
-        bk1.showPages();    // Using the .showPages() method of the Book class to access the attributes of Pages class. 
+        bk1.showPages(); // Using the .showPages() method of the Book class to access the attributes of
+                         // Pages class.
 
-        // Creating a library out of the objects of Book class: 
+        // Creating a library out of the objects of Book class:
         Library newobj = new Library("CSGS' Library");
-        
-        // Adding the Book objects to the Library object using the .addBook() method of the Library class. 
+
+        // Adding the Book objects to the Library object using the .addBook() method of
+        // the Library class.
         newobj.addBook(bk1);
         newobj.addBook(bk2);
         newobj.addBook(bk3);
         newobj.addBook(bk4);
 
-        // Using .showBooks() method of the Library Class to display the books available in the library: 
+        // Using .showBooks() method of the Library Class to display the books available
+        // in the library:
         newobj.showBooks();
     }
 }
