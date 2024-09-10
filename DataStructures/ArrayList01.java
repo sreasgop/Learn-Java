@@ -63,6 +63,12 @@ public class ArrayList01 {
         ArrayList<Integer> list2 = new ArrayList<>(listObj);
         System.out.println(list2);
 
+        // ArrayList(int capacity) --> It is used to build an array list that has the
+        // specified initial capacity.
+        ArrayList<Integer> list3 = new ArrayList<>(100);
+        System.out.println(list3.size());
+
+        // ArrayList
         // TRAVERSAL IN ORDER Vs TRAVERSAL IN REVERSE
         // Traversing an object of ArrayList using an iterator.
         // Iterator<Integer> it = listObj.iterator();
